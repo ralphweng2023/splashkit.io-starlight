@@ -1,5 +1,7 @@
 <div class="cover">
-<h1 class="cover-title">SplashKit Documentation</h1>
+<img class="cover-logo" src="../src/assets/favicon.svg" alt="SplashKit logo">
+<p class="cover-eyebrow">splashkit.io · the SplashKit website</p>
+<h1 class="cover-title">SplashKit Website</h1>
 <p class="cover-sub">Team Progress Demo</p>
 <p class="cover-meta">
 12 May 2026<br>
@@ -8,11 +10,21 @@ Branch: <code>demo/leadership-2026-05-12</code>
 </p>
 </div>
 
+<div class="toc-placeholder"></div>
+
 # Team Progress Demo — 2026-05-12
 
 ## What we shipped this trimester
 
-**Eleven student contributors shipped 22 peer-approved PRs** since 1 March 2026 — closing out SplashKit's keyboard and mouse input documentation, adding the **first interface widget** (`button`), and introducing a new artefact type: a **generative-AI tutorial guide** for SplashKit learners.
+This demo is for the **[SplashKit website](https://splashkit.io)** — the public documentation, tutorials, and API reference site that SplashKit learners and developers use as their primary entry point. The repo behind the site is `thoth-tech/splashkit.io-starlight` (Astro + Starlight).
+
+<div class="kpi-row">
+  <div class="kpi"><div class="kpi-num">11</div><div class="kpi-label">student contributors</div></div>
+  <div class="kpi"><div class="kpi-num">22</div><div class="kpi-label">peer-approved PRs</div></div>
+  <div class="kpi"><div class="kpi-num">9</div><div class="kpi-label">shipping in today's demo</div></div>
+</div>
+
+**Eleven student contributors shipped 22 peer-approved PRs** to the website since 1 March 2026 — closing out the keyboard and mouse input documentation, adding the **first interface widget** (`button`) to the API reference, and introducing a new artefact type: a **generative-AI tutorial guide** for SplashKit learners.
 
 Today walks through **9 of those PRs**, live, on a local build that bundles them into a single staging branch (`demo/leadership-2026-05-12`).
 
@@ -32,7 +44,15 @@ The 9 PRs in today's demo were selected for **visual variety + breadth across th
 
 ## Feature walkthrough
 
-### 1. `button` — first interface widget
+### <span class="badge badge-context">CONTEXT</span> The site itself <span class="chip">Feature 0</span>
+
+URL: <http://localhost:4321/>
+
+![SplashKit website homepage](./screenshots/homepage.png)
+
+The SplashKit website is the entry point for every learner and contributor. Built on Astro + Starlight, generated from `thoth-tech/splashkit.io-starlight`. The 9 features below all surface inside this site — under **API Documentation** (the `button`, `draw_circle`, and input examples) and **Tutorials and Guides** (the AI Prompt Helper). Today we'll click through each one on the local build of this site.
+
+### <span class="badge badge-interface">INTERFACE</span> 1. `button` — first interface widget <span class="chip">Feature 1</span>
 
 URL: <http://localhost:4321/api/interface/#button>
 
@@ -42,7 +62,7 @@ A first-class interface widget: renders a clickable button with hover and active
 
 **Author:** Ralph Weng (@ralphweng-autograb) · PR [#709](https://github.com/thoth-tech/splashkit.io-starlight/pull/709)
 
-### 2. `draw_circle` — graphics
+### <span class="badge badge-graphics">GRAPHICS</span> 2. `draw_circle` — graphics <span class="chip">Feature 2</span>
 
 URL: <http://localhost:4321/api/graphics/#draw-circle>
 
@@ -52,7 +72,7 @@ Two new variants for `draw_circle`: an animation example (a perpetually growing/
 
 **Author:** Janki Luitel (@jankiluitel) · PR [#712](https://github.com/thoth-tech/splashkit.io-starlight/pull/712)
 
-### 3. AI Prompt Helper — generative-AI guide
+### <span class="badge badge-guide">GUIDE</span> 3. AI Prompt Helper — generative-AI guide <span class="chip">Feature 3</span>
 
 URL: <http://localhost:4321/guides/generative-ai/ai-prompt-helper-for-splashkit/>
 
@@ -62,7 +82,7 @@ A different artefact type — not a usage example, a **tutorial guide page**. Wa
 
 **Author:** Janki Luitel (@jankiluitel) · PR [#749](https://github.com/thoth-tech/splashkit.io-starlight/pull/749)
 
-### 4. Input handling — completing the input surface
+### <span class="badge badge-input">INPUT</span> 4. Input handling — completing the input surface <span class="chip">Feature 4</span>
 
 Six new examples across five PRs, finishing off SplashKit's keyboard and mouse event coverage. Each example follows the same four-language pattern with a recorded GIF demonstrating the behaviour.
 
