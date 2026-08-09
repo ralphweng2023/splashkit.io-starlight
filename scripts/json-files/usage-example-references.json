@@ -62,6 +62,66 @@
     ],
     "color": [
         {
+            "funcKey": "alpha_of",
+            "title": "Reading the Alpha Channel",
+            "url": "/api/color/#alpha-of",
+            "functions": [
+                "open_window",
+                "alpha",
+                "rgba_color",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_rectangle",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "brightness_of",
+            "title": "Purple Shade Brightness",
+            "url": "/api/color/#brightness-of",
+            "functions": [
+                "open_window",
+                "rgba_color",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_circle",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "saturation_of",
+            "title": "Draws a rectangle in a random colour. The colour's saturation value is displayed on screen",
+            "url": "/api/color/#saturation-of",
+            "functions": [
+                "open_window",
+                "random_rgb_color",
+                "round",
+                "rectangle_from",
+                "clear_screen",
+                "color_white",
+                "fill_rectangle_record",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "red_of",
+                "green_of",
+                "blue_of",
+                "alpha_of",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
             "funcKey": "string_to_color",
             "title": "Color from Hex Code",
             "url": "/api/color/#string-to-color",
@@ -79,6 +139,25 @@
                 "refresh_screen",
                 "delay",
                 "close_all_windows"
+            ]
+        }
+    ],
+    "generative_ai": [
+        {
+            "funcKey": "free_conversation",
+            "title": "Freeing a Single AI Conversation Resource",
+            "url": "/api/generative_ai/#free-conversation",
+            "functions": [
+                "create_conversation",
+                "write_line"
+            ]
+        },
+        {
+            "funcKey": "generate_text",
+            "title": "Generating Text Response from AI",
+            "url": "/api/generative_ai/#generate-text",
+            "functions": [
+                "write_line"
             ]
         }
     ],
@@ -186,7 +265,7 @@
         },
         {
             "funcKey": "closest_point_on_circle",
-            "title": "Closest Point to Mouse on Circle",
+            "title": "Splashkit Function: ClosestPointOnCircle",
             "url": "/api/geometry/#closest-point-on-circle",
             "functions": [
                 "open_window",
@@ -206,8 +285,35 @@
             ]
         },
         {
+            "funcKey": "distant_point_on_circle",
+            "title": "Opposite Point to Mouse on Circle",
+            "url": "/api/geometry/#distant-point-on-circle",
+            "functions": [
+                "open_window",
+                "point_at",
+                "circle_at",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "clear_screen",
+                "color_white",
+                "draw_circle",
+                "color_black",
+                "lines",
+                "draw_line",
+                "color_gray",
+                "color_green",
+                "fill_circle",
+                "color_red",
+                "color_blue",
+                "draw_text_no_font_no_size",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
             "funcKey": "line_intersects_rect",
-            "title": "Avoid the Rectangle",
+            "title": "Splashkit Function: LineIntersectsRect",
             "url": "/api/geometry/#line-intersects-rect",
             "functions": [
                 "open_window",
@@ -233,7 +339,7 @@
         },
         {
             "funcKey": "line_length",
-            "title": "Simple Line Length",
+            "title": "Splashkit Function: LineLength",
             "url": "/api/geometry/#line-length",
             "functions": [
                 "open_window",
@@ -250,7 +356,7 @@
         },
         {
             "funcKey": "line_length_squared",
-            "title": "Simple Line Length Squared",
+            "title": "Splashkit Function: LineLengthSquared",
             "url": "/api/geometry/#line-length-squared",
             "functions": [
                 "open_window",
@@ -267,7 +373,7 @@
         },
         {
             "funcKey": "line_mid_point",
-            "title": "Simple Line Mid Point",
+            "title": "Splashkit Function: LineMidPoint",
             "url": "/api/geometry/#line-mid-point",
             "functions": [
                 "open_window",
@@ -285,7 +391,7 @@
         },
         {
             "funcKey": "line_to_string",
-            "title": "Display Line Information",
+            "title": "Splashkit Function: LineToString",
             "url": "/api/geometry/#line-to-string",
             "functions": [
                 "open_window",
@@ -302,7 +408,7 @@
         },
         {
             "funcKey": "lines_intersect",
-            "title": "Simple Line Intersect Check",
+            "title": "Splashkit Function: LinesIntersect",
             "url": "/api/geometry/#lines-intersect",
             "functions": [
                 "open_window",
@@ -321,7 +427,7 @@
         },
         {
             "funcKey": "point_at",
-            "title": "Flower Grid",
+            "title": "Splashkit Function: PointAt",
             "url": "/api/geometry/#point-at",
             "functions": [
                 "draw_flower",
@@ -338,7 +444,7 @@
         },
         {
             "funcKey": "point_at_origin",
-            "title": "Red Dot At Origin",
+            "title": "Splashkit Function: PointAtOrigin1",
             "url": "/api/geometry/#point-at-origin",
             "functions": [
                 "open_window",
@@ -355,7 +461,7 @@
         },
         {
             "funcKey": "point_in_circle",
-            "title": "Mouse in a Circle",
+            "title": "Splashkit Function: PointInCircle",
             "url": "/api/geometry/#point-in-circle",
             "functions": [
                 "open_window",
@@ -374,7 +480,7 @@
         },
         {
             "funcKey": "point_in_rectangle",
-            "title": "Cursor Jail",
+            "title": "Splashkit Function: PointInRectangle",
             "url": "/api/geometry/#point-in-rectangle",
             "functions": [
                 "rectangle_from",
@@ -400,7 +506,7 @@
         },
         {
             "funcKey": "point_in_triangle",
-            "title": "Mouse in a Triangle",
+            "title": "Splashkit Function: PointInTriangle",
             "url": "/api/geometry/#point-in-triangle",
             "functions": [
                 "triangle_from",
@@ -419,8 +525,29 @@
             ]
         },
         {
+            "funcKey": "point_line_distance",
+            "title": "Distance from a Point to a Line",
+            "url": "/api/geometry/#point-line-distance",
+            "functions": [
+                "open_window",
+                "line_from",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "clear_screen",
+                "color_white",
+                "draw_line",
+                "color_black",
+                "fill_circle",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "color_blue",
+                "refresh_screen"
+            ]
+        },
+        {
             "funcKey": "point_on_line",
-            "title": "Mouse Point On Line?",
+            "title": "Splashkit Function: PointOnLine1",
             "url": "/api/geometry/#point-on-line",
             "functions": [
                 "line_from",
@@ -443,7 +570,7 @@
         },
         {
             "funcKey": "point_point_angle",
-            "title": "How Does \"Point Point Angle\" Work?",
+            "title": "Splashkit Function: PointPointAngle",
             "url": "/api/geometry/#point-point-angle",
             "functions": [
                 "open_window",
@@ -479,7 +606,7 @@
         },
         {
             "funcKey": "point_point_distance",
-            "title": "Distance To Center",
+            "title": "Splashkit Function: PointPointDistance",
             "url": "/api/geometry/#point-point-distance",
             "functions": [
                 "open_window",
@@ -501,7 +628,7 @@
         },
         {
             "funcKey": "point_to_string",
-            "title": "Mouse Click Location",
+            "title": "Splashkit Function: PointToString",
             "url": "/api/geometry/#point-to-string",
             "functions": [
                 "open_window",
@@ -519,7 +646,7 @@
         },
         {
             "funcKey": "random_bitmap_point",
-            "title": "Random Triangles",
+            "title": "Splashkit Function: RandomBitmapPoint",
             "url": "/api/geometry/#random-bitmap-point",
             "functions": [
                 "open_window",
@@ -537,7 +664,7 @@
         },
         {
             "funcKey": "random_screen_point",
-            "title": "Stars in the Sky",
+            "title": "Splashkit Function: RandomScreenPoint",
             "url": "/api/geometry/#random-screen-point",
             "functions": [
                 "open_window",
@@ -552,7 +679,7 @@
         },
         {
             "funcKey": "random_window_point",
-            "title": "Random Portals",
+            "title": "Splashkit Function: RandomWindowPoint",
             "url": "/api/geometry/#random-window-point",
             "functions": [
                 "open_window",
@@ -569,8 +696,34 @@
             ]
         },
         {
+            "funcKey": "rectangle_around",
+            "title": "Splashkit Function: RectangleAround",
+            "url": "/api/geometry/#rectangle-around",
+            "functions": [
+                "open_window",
+                "create_timer",
+                "start_timer",
+                "quit_requested",
+                "point_at",
+                "cosine",
+                "sine",
+                "circle_at",
+                "timer_ticks",
+                "reset_timer",
+                "process_events",
+                "clear_screen_to_white",
+                "draw_rectangle_record",
+                "color_black",
+                "rectangle_around_circle",
+                "fill_circle_record",
+                "color_red",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
             "funcKey": "same_point",
-            "title": "Point 2D Guessing Game",
+            "title": "Splashkit Function: SamePoint",
             "url": "/api/geometry/#same-point",
             "functions": [
                 "get_point",
@@ -583,6 +736,32 @@
                 "point_at",
                 "main",
                 "inside"
+            ]
+        },
+        {
+            "funcKey": "widest_points",
+            "title": "Widest Points on a Circle",
+            "url": "/api/geometry/#widest-points",
+            "functions": [
+                "open_window",
+                "circle_at",
+                "point_at",
+                "quit_requested",
+                "process_events",
+                "center_point",
+                "mouse_position",
+                "vector_point_to_point",
+                "clear_screen",
+                "color_white",
+                "draw_circle",
+                "color_black",
+                "draw_line",
+                "color_gray",
+                "color_blue",
+                "fill_circle",
+                "color_red",
+                "draw_text_no_font_no_size",
+                "refresh_screen"
             ]
         }
     ],
@@ -602,6 +781,24 @@
                 "draw_circle_record",
                 "color_black",
                 "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "bitmap_center",
+            "title": "Draw a bitmap with a red dot at its center\r",
+            "url": "/api/graphics/#bitmap-center",
+            "functions": [
+                "open_window",
+                "load_bitmap",
+                "clear_screen",
+                "color_white",
+                "draw_bitmap",
+                "fill_circle_record",
+                "color_red",
+                "circle_at",
+                "refresh_screen",
+                "delay",
                 "close_all_windows"
             ]
         },
@@ -639,6 +836,31 @@
                 "color_black",
                 "delay",
                 "SplashKit"
+            ]
+        },
+        {
+            "funcKey": "draw_circle",
+            "title": "Circle Showcase",
+            "url": "/api/graphics/#draw-circle",
+            "functions": [
+                "open_window",
+                "clear_screen",
+                "color_white",
+                "fill_circle",
+                "color_red",
+                "color_blue",
+                "color_green",
+                "color_orange",
+                "color_purple",
+                "random_rgb_color",
+                "refresh_screen",
+                "delay",
+                "close_all_windows",
+                "quit_requested",
+                "process_events",
+                "clear_screen_to_white",
+                "refresh_screen_with_target_fps",
+                "key_down"
             ]
         },
         {
@@ -712,23 +934,15 @@
         },
         {
             "funcKey": "draw_line",
-            "title": "Colourful Starburst",
+            "title": "Draw a red line across the screen",
             "url": "/api/graphics/#draw-line",
             "functions": [
                 "open_window",
-                "clear_screen",
-                "color_black",
-                "color_yellow",
-                "color_green",
-                "color_teal",
-                "color_blue",
-                "color_violet",
-                "color_purple",
-                "color_pink",
+                "quit_requested",
+                "process_events",
+                "clear_screen_to_white",
                 "color_red",
-                "color_orange",
-                "refresh_screen",
-                "delay",
+                "refresh_screen_with_target_fps",
                 "close_all_windows"
             ]
         },
@@ -1234,6 +1448,25 @@
             ]
         },
         {
+            "funcKey": "get_font_style",
+            "title": "The program automatically cycles through font styles for a given font (also displaying example text), with the numerical value of each style being shown on screen\r",
+            "url": "/api/graphics/#get-font-style",
+            "functions": [
+                "open_window",
+                "font_named",
+                "quit_requested",
+                "process_events",
+                "set_font_style",
+                "clear_screen_to_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "draw_text",
+                "refresh_screen",
+                "delay",
+                "close_all_windows"
+            ]
+        },
+        {
             "funcKey": "has_font",
             "title": "Checking for Font using Variable",
             "url": "/api/graphics/#has-font",
@@ -1322,6 +1555,105 @@
             ]
         }
     ],
+    "input": [
+        {
+            "funcKey": "key_down",
+            "title": "Detecting Held Keys with KeyDown",
+            "url": "/api/input/#key-down",
+            "functions": [
+                "draw_key_state",
+                "color_green",
+                "color_gray",
+                "fill_circle",
+                "draw_circle",
+                "color_black",
+                "draw_text",
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "key_name",
+            "title": "Show Pressed Key",
+            "url": "/api/input/#key-name",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "key_typed",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "color_blue",
+                "refresh_screen",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "key_typed",
+            "title": "Typing Keys Once with KeyTyped",
+            "url": "/api/input/#key-typed",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "refresh_screen_with_target_fps"
+            ]
+        },
+        {
+            "funcKey": "mouse_clicked",
+            "title": "Clicking Colored Circles with MouseClicked",
+            "url": "/api/input/#mouse-clicked",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "mouse_position",
+                "point_in_circle",
+                "circle_at_from_points",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_circle",
+                "color_red",
+                "draw_circle",
+                "color_blue",
+                "color_green",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "mouse_position",
+            "title": "Tracking Mouse Position in a Window",
+            "url": "/api/input/#mouse-position",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "fill_circle",
+                "color_blue",
+                "draw_circle",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
+            ]
+        }
+    ],
     "networking": [
         {
             "funcKey": "dec_to_hex",
@@ -1361,6 +1693,44 @@
                 "format",
                 "read_line"
             ]
+        },
+        {
+            "funcKey": "send_message_to_connection",
+            "title": "UDP Telemetry Hub",
+            "url": "/api/networking/#send-message-to-connection",
+            "functions": [
+                "open_window",
+                "create_server_with_port_and_protocol",
+                "open_connection_with_protocol",
+                "position",
+                "quit_requested",
+                "process_events",
+                "check_network_activity",
+                "has_messages",
+                "read_message",
+                "message_data",
+                "len",
+                "index",
+                "float",
+                "close_message",
+                "clear_screen",
+                "color_black",
+                "fill_rectangle",
+                "rgba_color",
+                "draw_text_no_font_no_size",
+                "color_white",
+                "color_green",
+                "indicator",
+                "fill_circle",
+                "color_yellow",
+                "draw_circle",
+                "draw_rectangle",
+                "draw_line",
+                "refresh_screen_with_target_fps",
+                "close_all_connections",
+                "close_all_servers",
+                "close_all_windows"
+            ]
         }
     ],
     "physics": [
@@ -1370,30 +1740,34 @@
             "url": "/api/physics/#ray-intersection-point",
             "functions": [
                 "open_window",
+                "sqrt",
+                "rectangles",
                 "rectangle_from",
                 "line_from",
+                "len",
                 "quit_requested",
                 "process_events",
                 "mouse_position",
+                "ray",
                 "vector_from_angle",
                 "point_at",
-                "ray_intersection_point",
                 "point_point_distance",
+                "append",
                 "clear_screen",
                 "color_black",
                 "fill_triangle",
                 "rgba_color",
                 "draw_triangle",
-                "draw_line",
-                "draw_rectangle",
+                "draw_line_point_to_point",
+                "draw_rectangle_record",
                 "color_dark_gray",
-                "fill_rectangle",
+                "fill_rectangle_record",
                 "color_gray",
                 "fill_circle",
                 "color_yellow",
-                "draw_text",
+                "draw_text_no_font_no_size",
                 "color_white",
-                "refresh_screen",
+                "refresh_screen_with_target_fps",
                 "close_all_windows"
             ]
         },
@@ -1677,62 +2051,20 @@
             ]
         }
     ],
-    "terminal": [
+    "timers": [
         {
-            "funcKey": "write",
-            "title": "Progress Bar Simulation",
-            "url": "/api/terminal/#write",
+            "funcKey": "resume_timer",
+            "title": "Resuming a Paused Timer",
+            "url": "/api/timers/#resume-timer",
             "functions": [
+                "create_timer",
+                "start_timer",
                 "write_line",
-                "delay"
+                "delay",
+                "timer_ticks",
+                "pause_timer",
+                "free_timer"
             ]
-        },
-        {
-            "funcKey": "write_char",
-            "title": "Write Char Art",
-            "url": "/api/terminal/#write-char",
-            "functions": [
-                "write",
-                "write_line"
-            ]
-        },
-        {
-            "funcKey": "write_double",
-            "title": "Calculate the Radius of a Circle",
-            "url": "/api/terminal/#write-double",
-            "functions": [
-                "write_line",
-                "write"
-            ]
-        },
-        {
-            "funcKey": "write_int",
-            "title": "Countdown to lift off",
-            "url": "/api/terminal/#write-int",
-            "functions": [
-                "write_line",
-                "write"
-            ]
-        },
-        {
-            "funcKey": "write_line",
-            "title": "Hello World string",
-            "url": "/api/terminal/#write-line",
-            "functions": []
-        },
-        {
-            "funcKey": "write_line_empty",
-            "title": "Adding Blank Lines",
-            "url": "/api/terminal/#write-line-empty",
-            "functions": [
-                "write_line"
-            ]
-        },
-        {
-            "funcKey": "write_line_int",
-            "title": "Printing Integers",
-            "url": "/api/terminal/#write-line-int",
-            "functions": []
         }
     ],
     "utilities": [
@@ -1887,21 +2219,45 @@
             ]
         }
     ],
-    "generative_ai": [
+    "windows": [
         {
-            "funcKey": "free_conversation",
-            "title": "Freeing a Single AI Conversation Resource",
-            "url": "/api/ai/#free-conversation",
-            "usage_examples": [
-                {
-                    "name": "Freeing a Single AI Conversation Resource",
-                    "path": "generative_ai/free_conversation-1-example"
-                }
-            ],
+            "funcKey": "close_window",
+            "title": "Starts a countdown to close the window at the push of a button.",
+            "url": "/api/windows/#close-window",
             "functions": [
-                "free_conversation",
-                "create_conversation",
-                "write_line"
+                "open_window",
+                "create_timer",
+                "quit_requested",
+                "process_events",
+                "clear_window",
+                "color_white",
+                "button_at_position",
+                "rectangle_from",
+                "start_timer",
+                "draw_text_font_as_string",
+                "color_black",
+                "timer_ticks",
+                "reset_timer",
+                "draw_interface",
+                "refresh_window",
+                "close_all_windows"
+            ]
+        },
+        {
+            "funcKey": "current_window_width",
+            "title": "Show the Current Window Width",
+            "url": "/api/windows/#current-window-width",
+            "functions": [
+                "open_window",
+                "quit_requested",
+                "process_events",
+                "clear_screen",
+                "color_white",
+                "draw_text_no_font_no_size",
+                "color_black",
+                "color_blue",
+                "refresh_screen_with_target_fps",
+                "close_all_windows"
             ]
         }
     ]
